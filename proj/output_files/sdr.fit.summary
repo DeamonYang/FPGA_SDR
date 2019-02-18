@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Jan 19 11:37:49 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : sdr
+Top-level Entity Name : sdr
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 9,607 / 10,320 ( 93 % )
+    Total combinational functions : 4,775 / 10,320 ( 46 % )
+    Dedicated logic registers : 8,458 / 10,320 ( 82 % )
+Total registers : 8458
+Total pins : 37 / 180 ( 21 % )
+Total virtual pins : 0
+Total memory bits : 368,640 / 423,936 ( 87 % )
+Embedded Multiplier 9-bit elements : 46 / 46 ( 100 % )
+Total PLLs : 1 / 2 ( 50 % )

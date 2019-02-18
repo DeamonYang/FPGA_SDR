@@ -1,0 +1,39 @@
+module ad9226(
+		/*ADC */
+		rst_n			,
+		adc_oeb		,
+		adc_clk		,
+		adc_data		,
+		adc_mode		,
+		adc_otr		,	//out of range
+		adc_bus		,
+		adc_sck		,
+);
+
+
+	input rst_n;
+	output adc_oeb;
+	input adc_clk;
+	output reg [11:0]adc_data;
+	output [1:0]adc_mode;
+	input	adc_otr;
+	input [11:0]adc_bus;
+	output adc_sck;
+	
+	
+	assign adc_oeb = 1'b1;
+	assign adc_mode = 2'b10;
+	assign adc_sck = adc_clk;
+	
+	always@(posedge adc_clk or negedge rst_n)
+	if(!rst_n)
+		adc_data <= 12'd0;
+	else
+		adc_data <= adc_bus;
+		
+	
+	
+	
+	
+
+endmodule

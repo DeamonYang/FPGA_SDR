@@ -1,0 +1,34 @@
+module sdr(
+	clk		,
+	rst_n		,
+
+	AD_CLK	,	
+	AD_DB		,
+	AD_MOD	,
+	AD_OEB	,	
+	AD_OTR	,	
+
+	ATT_V		,
+
+	VCO_CE	,	
+	VCO_CLK	,	
+	VCO_DATA	,
+	VCO_LD	,	
+	VCO_LE	,	
+);
+
+
+endmodule
+AD_CLK		
+AD_DB	
+AD_MOD[2]	
+AD_OEB		
+AD_OTR		
+ATT_V[6]	
+VCO_CE		
+VCO_CLK		
+VCO_DATA	
+VCO_LD		
+VCO_LE		
+rst_n		
+clk			

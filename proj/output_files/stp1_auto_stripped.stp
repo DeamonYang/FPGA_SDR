@@ -1,0 +1,165 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP3C(10|5)/EP4CE(10|6) (0x020F10DD)" sof_file="sdr.sof">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" log="USE_GLOBAL_TEMP" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <signal_set global_temp="1" is_expanded="true" name="signal_set: 2018/12/23 18:48:56  #0">
+      <clock name="AD_CLK" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="1024" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="AD_DB[0]" tap_mode="classic"/>
+          <wire name="AD_DB[10]" tap_mode="classic"/>
+          <wire name="AD_DB[11]" tap_mode="classic"/>
+          <wire name="AD_DB[1]" tap_mode="classic"/>
+          <wire name="AD_DB[2]" tap_mode="classic"/>
+          <wire name="AD_DB[3]" tap_mode="classic"/>
+          <wire name="AD_DB[4]" tap_mode="classic"/>
+          <wire name="AD_DB[5]" tap_mode="classic"/>
+          <wire name="AD_DB[6]" tap_mode="classic"/>
+          <wire name="AD_DB[7]" tap_mode="classic"/>
+          <wire name="AD_DB[8]" tap_mode="classic"/>
+          <wire name="AD_DB[9]" tap_mode="classic"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="AD_DB[0]" tap_mode="classic"/>
+          <wire name="AD_DB[10]" tap_mode="classic"/>
+          <wire name="AD_DB[11]" tap_mode="classic"/>
+          <wire name="AD_DB[1]" tap_mode="classic"/>
+          <wire name="AD_DB[2]" tap_mode="classic"/>
+          <wire name="AD_DB[3]" tap_mode="classic"/>
+          <wire name="AD_DB[4]" tap_mode="classic"/>
+          <wire name="AD_DB[5]" tap_mode="classic"/>
+          <wire name="AD_DB[6]" tap_mode="classic"/>
+          <wire name="AD_DB[7]" tap_mode="classic"/>
+          <wire name="AD_DB[8]" tap_mode="classic"/>
+          <wire name="AD_DB[9]" tap_mode="classic"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="AD_DB[0]" tap_mode="classic"/>
+          <wire name="AD_DB[10]" tap_mode="classic"/>
+          <wire name="AD_DB[11]" tap_mode="classic"/>
+          <wire name="AD_DB[1]" tap_mode="classic"/>
+          <wire name="AD_DB[2]" tap_mode="classic"/>
+          <wire name="AD_DB[3]" tap_mode="classic"/>
+          <wire name="AD_DB[4]" tap_mode="classic"/>
+          <wire name="AD_DB[5]" tap_mode="classic"/>
+          <wire name="AD_DB[6]" tap_mode="classic"/>
+          <wire name="AD_DB[7]" tap_mode="classic"/>
+          <wire name="AD_DB[8]" tap_mode="classic"/>
+          <wire name="AD_DB[9]" tap_mode="classic"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <unified_setup_data_view>
+          <node name="AD_DB" order="lsb_to_msb" radix="line_signed" state="collapse" type="input pin">
+            <node data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="input pin"/>
+            <node data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="input pin"/>
+            <node data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="input pin"/>
+            <node data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="input pin"/>
+            <node data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="input pin"/>
+            <node data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="input pin"/>
+            <node data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="input pin"/>
+            <node data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="input pin"/>
+            <node data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="input pin"/>
+            <node data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="input pin"/>
+            <node data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="input pin"/>
+            <node data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="input pin"/>
+          </node>
+        </unified_setup_data_view>
+        <data_view>
+          <bus name="AD_DB" order="lsb_to_msb" radix="line_signed" state="collapse" type="input pin">
+            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="input pin"/>
+            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="input pin"/>
+            <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="input pin"/>
+            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="input pin"/>
+            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="input pin"/>
+            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="input pin"/>
+            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="input pin"/>
+            <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="input pin"/>
+            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="input pin"/>
+            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="input pin"/>
+            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="input pin"/>
+            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="input pin"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus name="AD_DB" order="lsb_to_msb" radix="line_signed" state="collapse" type="input pin">
+            <net data_index="2" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[11]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="2" tap_mode="classic" trigger_index="2" type="input pin"/>
+            <net data_index="1" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[10]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="1" tap_mode="classic" trigger_index="1" type="input pin"/>
+            <net data_index="11" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[9]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="11" tap_mode="classic" trigger_index="11" type="input pin"/>
+            <net data_index="10" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[8]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="10" tap_mode="classic" trigger_index="10" type="input pin"/>
+            <net data_index="9" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[7]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="9" tap_mode="classic" trigger_index="9" type="input pin"/>
+            <net data_index="8" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[6]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="8" tap_mode="classic" trigger_index="8" type="input pin"/>
+            <net data_index="7" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[5]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="7" tap_mode="classic" trigger_index="7" type="input pin"/>
+            <net data_index="6" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[4]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="6" tap_mode="classic" trigger_index="6" type="input pin"/>
+            <net data_index="5" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[3]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="5" tap_mode="classic" trigger_index="5" type="input pin"/>
+            <net data_index="4" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[2]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="4" tap_mode="classic" trigger_index="4" type="input pin"/>
+            <net data_index="3" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[1]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="3" tap_mode="classic" trigger_index="3" type="input pin"/>
+            <net data_index="0" is_data_input="true" is_node_valid="true" is_storage_input="true" is_trigger_input="true" level-0="dont_care" name="AD_DB[0]" pwr_level-0="dont_care" pwr_storage-0="dont_care" pwr_storage-1="dont_care" pwr_storage-2="dont_care" storage-0="dont_care" storage-1="dont_care" storage-2="dont_care" storage_index="0" tap_mode="classic" trigger_index="0" type="input pin"/>
+          </bus>
+        </setup_view>
+        <trigger_in_editor bit_condition="rising edge" is_enabled="false" is_hps_event_selected="false" is_hps_trigger_in_selected="false" is_node_selected="true" is_pin_selected="false" node_name="VCO_LE" pin_name="auto_stp_trigger_in_auto_signaltap_0"/>
+        <trigger_out_editor/>
+      </presentation>
+      <trigger CRC="95ED6409" attribute_mem_mode="false" gap_record="true" global_temp="1" is_expanded="true" name="trigger: 2018/12/23 18:48:56  #1" position="pre" power_up_trigger_mode="false" record_data_gap="true" segment_size="1024" storage_mode="start_stop" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="true" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">
+            <power_up enabled="yes">
+            </power_up><op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>111111111111
+            <pwr_up_transitional>111111111111</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+        <log>
+          <data global_temp="1" name="log: 2018/12/23 20:51:35  #0" power_up_mode="false" sample_depth="898" trigger_position="2">110111010110100110010011111010010000101001111001110101000100101000001100101010101111111110111100100110100011101010001111100001110100100101001000101000011001100010101110101110110010110110110000101010011001101001110001111101000100110000000010111010101001111111100001110110001010110001111111110010011101101101001001110111111010111010101100111111001101111110011101111010001011100010010101110101001000100000000111100010101101110111000101100110101010110010010010101001111000110101000100110000000110101010101110100110110101101110110000111010010000110010000000100101000100100000001001111010101011111111011001110110011011101010010010110001110100111101000100110000000100110010101100101111011001100110010011101010001111100001101001110101000100101000000111100010101111111110011101101110110111110010010110111001111101101101000100101111111111100010101100110111100110110110001001101010000011100010011100101101001001110000000101111010101100100111010111111110001110100010001101111001110010100101000101111000000011100010101010100111100000111110000111111001111010111010011101111101000111101111111001111010101010101111101000101110000100101001111110110010011001101101001001110000001000111010101011111111001100111110100001101010010001101001111110111101000101100000001011110010101111101110010010110111010011100010101000101111110111110101111011111001110110110010100110100101001101110111111101110010101010101111001111110110010111100010001011100001111100110101000100111000001010110010101110101110010100100111001000111010100000111000100010111101100100110001001100101010101100100101111011110111010010111010011111101000110111101101010011101000110000111010101101110110010101101111000000110010011010100001100110101101000101101000010000100010101111100110001110110111001110111010100000110000101011110101011101110001000100110010101110101110000011111111001110111010100100101000001011110101110001100001101100101010100100101101010000101000000011101010101110110111001011111110011001110010000100100010000111100101000111111111111001101010101100100111010101110110010101111010001111100001110111101101000101111111111011101010101100111111001010111110011101110010010001111001111101110101000100111000010010100010101111100110001111100111001001100010011110110000111010111101010011111000011110101010101111101110010100101110111100101010010110100010001100101101000101101000010010111010101101111110001100101111010111110010100001101000011001110101101001111001001110110010101101101101100010101111101111100010101011101111001000100110100011100010001000100010010010101101000101110000001100111010101100100111010001100110100110101010001110101001111100101101000101101000000001111010101100111111011001110110001000111001111011101010100111101101011011110111110111110010101010101111001011110110011010101010001110111010010110100101000100111000010000100010101111110110001001101111010101100010100001111000011001111101100111100001010000110010101100111101110010101111100000110010100000100000011001111101101110101001011111110010100111101101011101110111110111100010101011111111101011101101111010101010000000101010010001101101000110111000000101110010101100111111010100100110011111111010001100101001101001101101000110101000000101100010101011111111101001101110000100111001111100100010011010100101010011110000000101100010101110111110111100101110101111100010010001111010011110110101010001101000000000100010101101101110110101111110101100101010010111111001100110111101000110110000010100110010101110101110010101111111001010101010100001110000011000111101101101100001100010110010101010100101010101100000000000110010101100111110111110110110101010100010010101100001110010101101000100100000000010110010101100110111100010100110001110100010000101111010011000100101001100100111110110100010101100100111000100110110011100100010001010101010000000111101000101101000001010110010101101111111001000100110011111100010001111110001110000100101001010101000011111111010101101100111001010101110100111111010010001101001110110111101000100100000010000101010101111110110101100101110101110101010011000110001101010100101000100111111111010110010101010100111111101110101110001100001101010101010100110110101011010100111111010100010101000110000011011111101101011101001010101110010101010110101100010110111111001100010101001111000001110100101101101100001011011111010101001110101010111101111111001110010101011100111010101100110010101101010001110101001011110111101000100101000010001111010101111100110011101110111000101111010011110111000100010110101100011111001001011110010101101110101100010100111110111100010101100101111010111101110001000110001111110111010010111111101000110110000001111101010101101101110111111101110101110101010010010110010010011100101000110100000001000100010101110110110110011100110011011100010001010101010001000111101000100100000000000101010101110110110110011111110101100110010011000110010000000110101000101101000000111111010101011101111011000101110001100100010001110100001111000110101000110100111111100110010101001101000000011100101110000110001100101111010101011111101011010101111111000101010101100110110110000111110101001100010001111100010001101111101000101100000000001101010101100111110110101100110100111110010001110111001111011100101000100111000001001111010101101100110001101111111000111110010011101110001010100111101000111100000010110101010101111100110000100101111001011111010100011110000010110110101101011100001100010110010100001110101001010100111101110101010101010100111010100110110000110111001111100111010011110110101001100110111111010111010101100110111000101100110100111101010010101100001101110110101000110100000010101111010101110100110101011101110101101100010011010111001101000110101000100101000001101101010101111110110110001110110101000111010001110100010001111110101001000101111110110111010101010101111100001100110001001111010000000100010011011111101001000101111111111100010101100101111000110111110100000110010001010101010000110100101000110100000001110100010101110111110100100110110111000111010010011110010001101101101000110110000000101111010101101110111011010101110000110100001111001110010100100101101001000101000000000111010101010100111010111101110100011101010001111111010000110110101000100100000000101101010101010100000000101100101110100110001110000111010100101101101010111101111110011101010101101110111000100110110100101111010001111100010000110111101000101111000000100100010101111101110010000101111001100100010100011111000011101100101011100101001000010100010101110101110001010111111001100101010100001111000101001110101100001100001000001100010101110101110001101111111000110100010011111100000110110101101010101111000101101110010101110110110000010100111011001101010011111110000110111111101010011100000011000110010101100111110111001101110100111101010010010101010000110101101000100110000000100101010101010101111100110110110001000110010000011101010010001100101000101100000000111110010101011111111010001101110101000111010010000101010011010101101001011110111101111101010101100111111010110100110010011111010010001111010000000100101000111110111111100100010101101101111000111100110011111111010001011111010010010110101000111111111111100101010101010101111100011110110001011100010000100101010010011110101001110101111110101110010101011101111010000101110010111111010010000111001100101100101001000101000011000111010101110110110011000101110111011110010010110111001011001101101000110100000001001101010101100111111001100101110011001110010010001110001111000111101000011101000001011111010101111101110000100110111100001111010011110110001011111100101000101100000001000101010101101111111010010111110011011100010010100111001101101111101000100111111111010111010101011101111011001110110010010111010001011110001101001100101000111101000011001111010101111101110100110111110111111101010011011110001011001100101001001110000100111111010101110100101111110111111001011101010011110110000101110101101100000101000111011100010101100110101101101100111100101110010100110101000011110111101101100100001011110111010101011111101100110101111110011100010101010110000010001111101110010110001101000100010100100111101011101110111111111111010101011100111001010100110010101101010001101110001110101101101000110110000010000111010101110111111000110111110011000101010010000111010000000110101000100110000000101110010101101111111010100110110011000101010010001100001110011101101000101100000001110110010101110111110110011100110100110100010001110101010000010111101000101101000000000101010101100111111011000110110010001111010001101110010001010101101000110101000001011110010101111111111000101111110011101100010001100111010001011111101000100111000001000111010101011100111010101101110011100111010001011111001111010101101000100111000001010111010101101110110110001101110101001111010010011100010000010111101000100101000001001110010101110110110111011111110100011111010001100100010001011110101000110110111110101111010100110101000001011100101101110111001011010101010101011101101101011110111100101110010100011100000011011100101100001101001001011100010101111111110000001101111010100101010100011101000100011110101101000101001001110100010101100100101100101110111110111111010101101110111001001100110011011101010001111100001101000111101000101110000000111110010101110100110101101101110101100111010001101111001111110101101000101110000010011100010101110101110011000100111000000100010010110111010001010101101000110110000000110101010101101100111000110110110011000101010001111100010010100110101000110110000000000100010101011101111010110100110010000110010001100100001111101111101001000101111111010111010101010101111011001110110010001111010001100111010000110110101000100101000000101110010101011111111011110101110010111110010001101100001110111101101000100101000000110111010101101101111000001111110101000111010010100111001110111111101000101111000010110100010101111101110000001100111010110100010011111110001011101110101000100100000001110110010101110101110110101101110101100111010010110110001111101111101000100111000000110110010101011111111010100111110010010111010001011100010010001101101000111100000000010101010101010110111011101110110010111100010001001111010011100101101010001110000000010101010101110100111001101100110100010100010001011111001110011101101000100101000000000100010101100110111000011101110101101111010010111100001011011111101001001101000011000110010101111101110000011100111011000101010100011100000011001110101101110101001100101100010100111100101010100101111111010110010101010100111101011100110001100100010001000100010011110111101000110100000000011111010101010100111101100111110001000111010000010110010010011110101001101101111111111101010101101101111010010101110010000110010000011100010010000100101000101100000001110100010101111101110010010101111001000111010011011111001100111100101000101110000001010101010101101101111100001100110010000110010010011101001110010110101000101110000001001111010101101101111001100111110011100101010001100</data>
+          <extradata>11T1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</extradata>
+        </log>
+      </trigger>
+    </signal_set>
+    <position_info>
+      <single attribute="active tab" value="0"/>
+      <single attribute="data horizontal scroll position" value="0"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="1"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="130174"/>
+    </position_info>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget height" value="102"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <single attribute="sof manager visible" value="0"/>
+    <multi attribute="frame size" size="2" value="1124,805"/>
+    <multi attribute="jtag widget size" size="2" value="334,120"/>
+  </global_info>
+</session>

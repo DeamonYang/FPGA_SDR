@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Sat Jan 19 11:37:23 2019
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : sdr
+Top-level Entity Name : sdr
+Family : Cyclone IV E
+Total logic elements : 11,155
+    Total combinational functions : 4,772
+    Dedicated logic registers : 8,793
+Total registers : 8793
+Total pins : 37
+Total virtual pins : 0
+Total memory bits : 368,640
+Embedded Multiplier 9-bit elements : 46
+Total PLLs : 1

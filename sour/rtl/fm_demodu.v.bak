@@ -1,0 +1,142 @@
+module fm_demodu(
+		clk_50M	,
+		clk_dds	,
+		clk_data	,
+		clk_datax2,
+		rst_n		,
+		if_data	,
+		cen_freq	,
+		data_out	,
+		data_done
+	);
+	
+		input clk_50M	;
+		input clk_dds	;
+		input clk_data	;
+		input clk_datax2;
+		input rst_n		;
+		input [11:0]if_data	;
+		input [14:0]cen_freq	;//0-28MHz 步进为1kHz
+		output[15:0]data_out	;
+		output data_done;
+		
+		reg [31:0]Fword;
+		wire [9:0]DataCHS;
+		wire [9:0]DataCHC;		
+
+		reg [9:0]reg_DataCHS;
+		reg [9:0]reg_DataCHC;
+		reg [11:0]reg_if_data;
+		
+		wire [21:0]Qh;
+		wire [21:0]Ih;
+//		reg signed [22:0]reg_Qh;
+//		reg signed [22:0]reg_Ih;	
+		
+		wire signed [28:0]Qm;
+		wire signed [28:0]Im;
+
+		reg signed[17:0]reg_Qm;
+		reg signed[17:0]reg_Im;		
+		
+		reg signed[35:0]dm_Qm;
+		reg signed[35:0]dm_Im;
+		
+		reg signed[35:0]sn;
+		wire [20:0]cic_data_out;
+		wire cic_data_done;
+		reg [20:0]reg_cic_data_out;
+		
+		dds_du noc_ch(
+				.clk		(clk_dds		),
+				.reset_n	(rst_n	),
+				.Fword		(Fword		),
+				.Pword		(11'd0		),
+				.DataCHS	(DataCHS	),
+				.DataCHC	(DataCHC	)
+			);
+			
+		always@(posedge clk_data or negedge rst_n)
+		if(!rst_n)
+			Fword <= 32'd0;
+		else
+			Fword <= 32'd66076420;//cen_freq * 8605;
+			
+
+		
+		always@(posedge clk_data or negedge rst_n)
+		if(!rst_n)begin
+			reg_DataCHC <= 10'd0;
+			reg_DataCHS <= 10'd0;
+			reg_if_data <= 12'd0;
+		end else begin
+			reg_DataCHC <= DataCHC;
+			reg_DataCHS <= DataCHS;	
+			reg_if_data	<= if_data;	
+		end
+		
+		assign Qh = {{10{reg_if_data[11]}},reg_if_data} * {{12{reg_DataCHS[9]}},reg_DataCHS}; //有符号数乘法
+		assign Ih = {{10{reg_if_data[11]}},reg_if_data} * {{12{reg_DataCHC[9]}},reg_DataCHC}; //有符号数乘法
+		
+		fir_lpf_200khz Qch_lpf(
+			.rst_n	(rst_n		),
+			.clk		(clk_data		),
+			.clkx2	(clk_datax2		),
+			.data_in	(Qh[21:10]	),   //12bit
+			.data_out(Qm)
+			);
+	
+		fir_lpf_200khz Ich_lpf(
+			.rst_n	(rst_n		),
+			.clk		(clk_data		),
+			.clkx2	(clk_datax2		),
+			.data_in	(Ih[21:10]	),   //12bit
+			.data_out(Im	)
+			);
+		
+		always@(posedge clk_data or negedge rst_n)
+		if(!rst_n)begin
+			reg_Qm <= 18'd0;
+			reg_Im <= 18'd0;
+		end else begin
+			reg_Qm <= Qm[24:7];
+			reg_Im <= Im[24:7];	
+		end	
+	
+		/*解调*/
+		always@(posedge clk_data or negedge rst_n)
+		if(!rst_n)begin
+			dm_Qm <= 36'd0;
+			dm_Im <= 36'd0;
+		end else begin 
+			dm_Qm <= {{18{Qm[24]}},Qm[24:7]} * {{18{reg_Im[17]}},reg_Im};
+			dm_Im <= {{18{Im[24]}},Im[24:7]} * {{18{reg_Qm[17]}},reg_Qm};	
+		end	
+	
+		/*解调*/
+		always@(posedge clk_data or negedge rst_n)
+		if(!rst_n)
+			sn <= 36'd0;
+		else
+			sn <= dm_Im - dm_Qm;
+
+		/*降采样*/
+		ddc65 rsmd32(
+			.rst_n		(rst_n),
+			.clk		(clk_data),
+			.data_in	(sn[27:12]),
+			.data_out	(cic_data_out),
+			.data_done(data_done)
+	);
+	
+		always@(posedge clk_data or negedge rst_n)
+		if(!rst_n)
+			reg_cic_data_out <= 21'd0;
+		else
+			reg_cic_data_out <= cic_data_out;
+	
+	assign data_out = reg_cic_data_out[17:2];
+
+endmodule
+	
+	

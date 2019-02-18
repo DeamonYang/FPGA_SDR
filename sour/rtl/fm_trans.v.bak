@@ -1,0 +1,14 @@
+module	fm_trans(
+		clk,
+		rst_n,
+		data_in,
+		fm_out
+	);
+	
+	input clk;
+	input rst_n;
+	input [9:0]data_in;
+	output fm_out;
+
+
+endmodule
